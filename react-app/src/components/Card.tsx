@@ -1,10 +1,11 @@
 import { ReactNode } from "react";
 
+// Card
 interface CardProps {
   children: ReactNode;
 }
 
-export default function Card(props: CardProps) {
+function Card(props: CardProps) {
   const { children } = props;
 
   return (
@@ -13,13 +14,15 @@ export default function Card(props: CardProps) {
     </div>
   );
 }
+export default Card;
 
+// CardBody
 interface CardBodyProps {
   title: string;
   description?: string;
 }
 
-export function CardBody(props: CardBodyProps) {
+function CardBody(props: CardBodyProps) {
   const { title, description } = props;
 
   return (
@@ -29,3 +32,5 @@ export function CardBody(props: CardBodyProps) {
     </>
   );
 }
+
+export { CardBody };
