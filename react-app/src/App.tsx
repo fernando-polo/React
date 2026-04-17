@@ -2,6 +2,7 @@ import Card, { CardBody } from "./components/Card";
 import List from "./components/List";
 import Button from "./components/Button";
 import MyComponent from "./components/MyComponent";
+import Component from "./components/Component";
 
 function App() {
   const gods = [
@@ -16,6 +17,7 @@ function App() {
       {gods.length > 0 && <List data={gods} />}
       <Button title={"Hola, soy un btn"} />
       <MyComponent />
+      <Component />
     </Card>
   );
 }
